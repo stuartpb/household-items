@@ -6,9 +6,9 @@ cap_tc_radius = 2;
 cap_thickness = 1.2;
 cap_outset=0.1;
 
-cable_corner_inset_x = 5;
+cable_corner_inset_x = 6;
 cable_corner_inset_y = 6;
-cable_cutout_radius = 7;
+cable_cutout_radius = 8;
 
 $fs = 1;
 
