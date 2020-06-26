@@ -51,5 +51,5 @@ difference () {
     offset(delta=-cap_thickness+cap_outset) cap_profile();
   translate([cap_width/2-cable_corner_inset_x,-cap_height/2+cable_corner_inset_y,-1])
     cylinder(r=cable_cutout_radius, h=cap_height+2);
-  translate([0,0,-1]) linear_extrude(1.4) mirror([1,0]) #marking();
+  //translate([0,0,-1]) linear_extrude(1.4) mirror([1,0]) marking();
 }
