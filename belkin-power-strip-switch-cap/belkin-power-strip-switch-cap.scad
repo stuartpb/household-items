@@ -1,12 +1,12 @@
-cap_width = 45;
+cap_width = 46;
 cap_height = 25;
-cap_depth = 8;
+cap_depth = 6;
 cap_bc_radius = 5;
 cap_tc_radius = 2;
-cap_thickness = 2;
+cap_thickness = 1.4;
 
-cable_corner_inset = 7;
-cable_cutout_radius = 8;
+cable_corner_inset = 5;
+cable_cutout_radius = 6;
 
 $fs = 1;
 
@@ -19,18 +19,21 @@ module cap_profile () {
   }
 }
 module marking () {
-  translate([8,0])
+  translate([-3,0])
     text(str(cap_width, "x", cap_height, "x", cap_depth),
-    size=4, halign="center", valign="center");
+      size=4, halign="left", valign="center");
   translate([cap_width/2-max(cap_tc_radius,4),cap_height/2-max(cap_tc_radius,4)])
     text(str(cap_tc_radius),
-    size=4, halign="center", valign="center");
+      size=4, halign="center", valign="center");
   translate([cap_width/2-max(cap_bc_radius,4),-cap_height/2+max(cap_bc_radius,4)])
     text(str(cap_bc_radius),
-    size=4, halign="center", valign="center");
-  translate([-cap_width/2+2,cap_height/2-5])
+      size=4, halign="center", valign="center");
+  translate([-cap_width/2+2,-cap_height/2+2*cable_cutout_radius+1])
     text(str("X", cable_corner_inset, " R", cable_cutout_radius),
-    size=4, halign="left", valign="center");
+      size=4, halign="left", valign="bottom");
+  translate([-3,-5])
+    text(str("T", cap_thickness ),
+      size=4, halign="left", valign="center");
 }
 
 difference () {
