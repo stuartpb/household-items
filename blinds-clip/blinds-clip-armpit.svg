@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="blinds-clip-armpit.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 250 210"
+   height="210mm"
+   width="250mm">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:pagecheckerboard="false"
+     inkscape:showpageshadow="false"
+     borderlayer="true"
+     inkscape:window-maximized="0"
+     inkscape:window-y="27"
+     inkscape:window-x="0"
+     inkscape:window-height="986"
+     inkscape:window-width="840"
+     guidehiopacity="0.49803922"
+     guidehicolor="#ff0000"
+     guideopacity="0.49803922"
+     guidecolor="#0000ff"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="230.17952"
+     inkscape:cx="80.133946"
+     inkscape:zoom="1.4"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     borderopacity="1"
+     bordercolor="#ff4400"
+     pagecolor="#323232"
+     id="base">
+    <inkscape:grid
+       spacingy="0.99999998"
+       spacingx="0.99999998"
+       units="mm"
+       originy="210"
+       originx="0"
+       empspacing="10"
+       empopacity="0.25098039"
+       empcolor="#cccccc"
+       opacity="0.1254902"
+       color="#9f9f9f"
+       id="grid833"
+       type="xygrid" />
+    <inkscape:grid
+       originy="210"
+       originx="0"
+       empspacing="1"
+       empopacity="0.50196078"
+       empcolor="#ffffff"
+       opacity="0.1254902"
+       color="#ffffff"
+       spacingy="49.999999"
+       spacingx="49.999999"
+       units="mm"
+       id="grid853"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path961"
+       d="m 9.9999998,12.000004 0,18 34.9999992,-12 0,-6 z"
+       style="fill:#e6e6e6;stroke-width:2.117" />
+  </g>
+</svg>
