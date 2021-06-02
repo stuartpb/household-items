@@ -1,7 +1,7 @@
 //Measurements
 backgrasp = 20;
 gap = 2;
-inset = 40;
+inset = 20;
 protrusion = 13;
 
 //parameters
