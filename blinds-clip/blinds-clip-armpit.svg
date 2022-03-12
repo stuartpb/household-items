@@ -7,67 +7,67 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="blinds-clip-armpit.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 250 210"
+   width="250mm"
    height="210mm"
-   width="250mm">
+   viewBox="0 0 250 210"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="blinds-clip-armpit.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
-     inkscape:pagecheckerboard="false"
-     inkscape:showpageshadow="false"
-     borderlayer="true"
-     inkscape:window-maximized="0"
-     inkscape:window-y="27"
-     inkscape:window-x="0"
-     inkscape:window-height="986"
-     inkscape:window-width="840"
-     guidehiopacity="0.49803922"
-     guidehicolor="#ff0000"
-     guideopacity="0.49803922"
-     guidecolor="#0000ff"
-     showgrid="true"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="mm"
-     inkscape:cy="230.17952"
-     inkscape:cx="80.133946"
-     inkscape:zoom="1.4"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     borderopacity="1"
-     bordercolor="#ff4400"
+     id="base"
      pagecolor="#323232"
-     id="base">
+     bordercolor="#ff4400"
+     borderopacity="1"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="-6.3886122"
+     inkscape:cy="122.55469"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     guidecolor="#0000ff"
+     guideopacity="0.49803922"
+     guidehicolor="#ff0000"
+     guidehiopacity="0.49803922"
+     inkscape:window-width="840"
+     inkscape:window-height="986"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:pagecheckerboard="false">
     <inkscape:grid
-       spacingy="0.99999998"
-       spacingx="0.99999998"
-       units="mm"
-       originy="210"
-       originx="0"
-       empspacing="10"
-       empopacity="0.25098039"
-       empcolor="#cccccc"
-       opacity="0.1254902"
-       color="#9f9f9f"
+       type="xygrid"
        id="grid833"
-       type="xygrid" />
-    <inkscape:grid
-       originy="210"
-       originx="0"
-       empspacing="1"
-       empopacity="0.50196078"
-       empcolor="#ffffff"
+       color="#9f9f9f"
        opacity="0.1254902"
-       color="#ffffff"
-       spacingy="49.999999"
-       spacingx="49.999999"
+       empcolor="#cccccc"
+       empopacity="0.25098039"
+       empspacing="10"
+       originx="0"
+       originy="210"
        units="mm"
+       spacingx="0.99999998"
+       spacingy="0.99999998" />
+    <inkscape:grid
+       type="xygrid"
        id="grid853"
-       type="xygrid" />
+       units="mm"
+       spacingx="49.999999"
+       spacingy="49.999999"
+       color="#ffffff"
+       opacity="0.1254902"
+       empcolor="#ffffff"
+       empopacity="0.50196078"
+       empspacing="1"
+       originx="0"
+       originy="210" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -77,18 +77,18 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     id="layer1">
     <path
-       sodipodi:nodetypes="ccccc"
+       style="fill:#e6e6e6;stroke-width:2.117"
+       d="m 9.9999998,12.000004 0,20 34.9999992,-14 v -6 z"
        id="path961"
-       d="m 9.9999998,12.000004 0,18 34.9999992,-12 0,-6 z"
-       style="fill:#e6e6e6;stroke-width:2.117" />
+       sodipodi:nodetypes="ccccc" />
   </g>
 </svg>

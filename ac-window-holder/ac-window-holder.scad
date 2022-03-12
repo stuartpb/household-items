@@ -1,7 +1,7 @@
 //Measurements
 backgrasp = 20;
 gap = 2;
-inset = 20;
+inset = 26; // living room window = 20
 protrusion = 13;
 
 //parameters
@@ -11,7 +11,7 @@ backhold = 5;
 edge = 10;
 o= .1;
 
-linear_extrude(20) {
+linear_extrude(10) {
   difference() {
     square([inset + wingrasp + edge, winhold + protrusion + gap + backhold]);
     translate([-o,-o]) square([o+inset - backgrasp +wingrasp, o+backhold+o]);

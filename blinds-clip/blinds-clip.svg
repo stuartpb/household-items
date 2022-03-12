@@ -17,15 +17,22 @@
   <defs
      id="defs2" />
   <sodipodi:namedview
+     inkscape:snap-smooth-nodes="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     inkscape:snap-grids="true"
+     inkscape:snap-center="false"
      id="base"
      pagecolor="#323232"
      bordercolor="#ff4400"
      borderopacity="1"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="44.786962"
-     inkscape:cy="320.38452"
+     inkscape:zoom="5.6"
+     inkscape:cx="310.08297"
+     inkscape:cy="65.998821"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -34,7 +41,7 @@
      guideopacity="0.49803922"
      guidehicolor="#ff0000"
      guidehiopacity="0.49803922"
-     inkscape:window-width="840"
+     inkscape:window-width="857"
      inkscape:window-height="986"
      inkscape:window-x="0"
      inkscape:window-y="27"
@@ -86,9 +93,10 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#e6e6e6;stroke-width:2.117"
-       d="M 10,91.000004 8,95.000002 7.9999998,100 H 5.9999999 l 2e-7,-5.999998 L 8,90.000004 l -2e-7,-71 -1.9999999,-4 v -5 h 2 v 5 h 1.9999999 v -5 H 89.999996 v 8 h -4.999998 l 10e-7,-2 2.999999,-1 -1e-6,-3 H 46.999999 v 3 l 2.999999,1 v 2 h -5.000001 v -6 H 12 v 4 H 9.9999998 Z"
-       id="path873"
-       sodipodi:nodetypes="ccccccccccccccccccccccccccccc" />
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccc"
+       transform="scale(0.26458333)"
+       d="m 22.677734,37.794922 v 15.11914 l 7.558594,18.896485 V 332.59375 l -7.558594,15.12305 v 22.67773 l 7.558594,0.0117 0.0332,-20.9707 7.523438,-15.04883 0.002,-273.914064 H 45.35356 V 45.353516 H 170.07812 V 68.03125 h 18.89844 V 60.472656 L 177.63867,56.693359 V 45.353516 l 151.17874,3.69e-4 v 11.339843 l -11.33789,3.779297 v 7.558594 h 18.89843 V 37.795291 L 37.794922,37.794922 V 56.693359 H 30.236328 V 37.794922 Z"
+       style="fill:#e6e6e6;stroke-width:8.00126"
+       id="path873" />
   </g>
 </svg>
