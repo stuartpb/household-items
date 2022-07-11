@@ -3,17 +3,17 @@ clip_thickness = 2.5;
 clip_height = 20;
 more = 1;
 
-wing_bottom_length = 20;
 wing_thickness = 5;
 wing_tip_thickness = 5;
 wing_edge_thickness = 5;
 wing_elbow_thickness = 5;
-wing_elbow_distance = 30;
-wing_tip_distance = 30;
+wing_bottom_length = 30;
+wing_elbow_distance = 40;
+wing_tip_distance = 40;
 wing_inner_height = 20;
 wing_elbow_height = 17.5;
-wing_tip_height = 30;
-wing_angle = 60;
+wing_tip_height = 25;
+wing_angle = 50;
 
 $fa = 1;
 $fs = .5;
