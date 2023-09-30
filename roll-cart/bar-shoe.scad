@@ -8,7 +8,7 @@ ridge_count = 8;
 ridge_arc = 90;
 ridge_retract = 0.25;
 open_gap = 12;
-foot_length = 6.5;
+foot_length = 6;
 heel_diameter = 4;
 
 $fn = 90;
@@ -21,7 +21,7 @@ ridge_start = ridge_arc / 2;
 ridge_deg_sep = ridge_arc / (ridge_count-1);
 
 module heel() {
-  translate([open_gap/2+1.5,-outer_radius+1.5,0]) rotate(-45) hull(){
+  translate([open_gap/2+1,-outer_radius+1.5,0]) rotate(-45) hull(){
     translate([-foot_length+heel_diameter,0,0]) cylinder(d=heel_diameter, h=height);
     translate([foot_length-heel_diameter,0,0]) cylinder(d=3, h=height);
   }
