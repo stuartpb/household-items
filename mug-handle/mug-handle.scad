@@ -24,7 +24,7 @@ module cupprim(h1, r1, rc) {
 }     
 
 // Let's make the handle a torus
-difference() {
+scale(0.66) difference() {
     // the base handle shape
     translate([cupwd, .5*cupht,0]) scale([.75,1,1.75]) rotate_extrude(convexity=12)
       translate([.4*cupht,0,0]) circle(r=handlr);

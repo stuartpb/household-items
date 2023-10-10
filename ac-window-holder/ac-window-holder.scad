@@ -1,7 +1,7 @@
 //Measurements
-backgrasp = 20;
+backgrasp = 10;
 gap = 2;
-inset = 26; // living room window = 20
+inset = 13; // living room window = 20
 protrusion = 13;
 
 //parameters

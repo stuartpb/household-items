@@ -4,8 +4,8 @@ tiphole_diam = 3;
 tiphole_depth = 1;
 rod_diam = 8;
 tol = 0;
-carveout_r = 2.5;
-carveout_dist = 8;
+carveout_r = 3;
+carveout_dist = 8.5;
 $fn = 90;
 
 module footprint() {
@@ -22,7 +22,7 @@ module profile() {
   intersection() {
     hull() {
       square([1, length]);
-      translate([2,5]) circle(5);
+      translate([3,4]) circle(4);
       translate([4.5,length-5]) scale([2.5,5]) circle();
     }
     square([handle_diam/2, length]);

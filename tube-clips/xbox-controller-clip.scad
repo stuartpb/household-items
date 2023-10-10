@@ -1,18 +1,18 @@
 clip_diameter = 36; //40;
 clip_thickness = 2.5;
-clip_height = 20;
+clip_height = 15;
 more = 1;
 
 wing_thickness = 5;
 wing_tip_thickness = 5;
 wing_edge_thickness = 5;
 wing_elbow_thickness = 5;
-wing_bottom_length = 30;
-wing_elbow_distance = 40;
-wing_tip_distance = 40;
-wing_inner_height = 20;
-wing_elbow_height = 17.5;
-wing_tip_height = 25;
+wing_bottom_length = 40;
+wing_elbow_distance = 42;
+wing_tip_distance = 45;
+wing_inner_height = 15;
+wing_elbow_height = 10;
+wing_tip_height = 22;
 wing_angle = 50;
 
 $fa = 1;
