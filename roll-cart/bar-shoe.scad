@@ -21,23 +21,33 @@ ridge_start = ridge_arc / 2;
 ridge_deg_sep = ridge_arc / (ridge_count-1);
 
 module heel() {
-  translate([open_gap/2+1,-outer_radius+1.5,0]) rotate(-45) hull(){
-    translate([-foot_length+heel_diameter,0,0]) cylinder(d=heel_diameter, h=height);
-    translate([foot_length-heel_diameter,0,0]) cylinder(d=3, h=height);
+  translate([open_gap/2+1,-outer_radius+1.5,0]) rotate(-45) hull() {
+    translate([-foot_length+heel_diameter,0,0]) circle(d=heel_diameter);
+    translate([foot_length-heel_diameter,0,0]) circle(d=3);
   }
 }
 
-difference () {
-  cylinder(d=outer_diameter, h=height);
-  translate([0,0,-1]) cylinder(d=inner_diameter, h=height+2);
-  translate([0,0,-1]) linear_extrude(height+2) polygon([[0,0],[open_gap,-outer_diameter],[-open_gap,-outer_diameter]]);
+module ridges() {
+  for (i=[0:ridge_count-1]) {
+    angle = ridge_start+ridge_deg_sep*i;
+    distance = outer_radius - ridge_retract;
+    translate([cos(angle)*distance,sin(angle)*distance,0])
+    circle(d=ridge_diameter);
+  }
 }
+
+module outline() {
+  union () {
+    difference () {
+      circle(d=outer_diameter);
+      circle(d=inner_diameter);
+      polygon([[0,0],[open_gap,-outer_diameter],[-open_gap,-outer_diameter]]);
+    }
+    ridges();
+    heel();
+    mirror([1,0,0]) heel();
+  }
+}
+
+linear_extrude(height) outline();
 translate([0,inner_radius,height/2]) rotate([90,0,0]) cylinder(d=peg_diameter, h=peg_length);
-heel();
-mirror([1,0,0]) heel();
-for (i=[0:ridge_count-1]) {
-  angle = ridge_start+ridge_deg_sep*i;
-  distance = outer_radius - ridge_retract;
-  translate([cos(angle)*distance,sin(angle)*distance,0])
-  cylinder(h=height, d=ridge_diameter);
-}
