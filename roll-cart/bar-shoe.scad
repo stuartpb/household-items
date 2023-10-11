@@ -1,5 +1,5 @@
-outer_diameter = 23;
-inner_diameter = 17;
+outer_diameter = 22;
+inner_diameter = 16;
 height = 18.5;
 peg_diameter = 5;
 peg_length = 6.5;
@@ -15,7 +15,6 @@ foot_twist = 0;
 
 $fn = 90;
 
-gap_slope = outer_diameter / open_gap;
 outer_radius = outer_diameter / 2;
 inner_radius = inner_diameter / 2;
 
