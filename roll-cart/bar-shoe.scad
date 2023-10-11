@@ -1,5 +1,5 @@
-outer_diameter = 22;
-inner_diameter = 16;
+outer_diameter = 23;
+inner_diameter = outer_diameter - 6;
 height = 18.5;
 peg_diameter = 5;
 peg_length = 6.5;
