@@ -2,7 +2,7 @@ base_d = 42;
 top_d = 33;
 inner_d = 29;
 
-space = 5; 
+space = 8; 
 
 over = 1;
 
