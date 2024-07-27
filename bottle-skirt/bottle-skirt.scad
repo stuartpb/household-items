@@ -1,11 +1,11 @@
-ir_base = 6;
-or_base = 7;
+ir_base = 9.5;
+or_base = 10.5;
 bottom_scale = 5;
 waist_scale = 3;
 bust_scale = 4;
 
 waist_height = 40;
-bust_height = 50;
+bust_height = 60;
 
 module starburst(points = 10, ir, or) {
   tick = 180/points;
