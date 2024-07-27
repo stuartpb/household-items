@@ -1,19 +1,46 @@
 ir_base = 9.5;
 or_base = 10.5;
 bottom_scale = 5;
-waist_scale = 3;
 bust_scale = 4;
 
-waist_height = 40;
-bust_height = 60;
+measurements = [
+  [47.5, 0],
+  [28.5, 40],
+  [38, 60]
+];
 
-module starburst(points = 10, ir, or) {
-  tick = 180/points;
-  polygon([
-      for (i=[0:points*2-1])
-      let (th = tick *i, r=i%2?ir:or)
-      [r*cos(th), r*sin(th)] ]);
-}
-linear_extrude(height = waist_height, scale=waist_scale/bottom_scale)
-  starburst(10, or_base*bottom_scale, ir_base*bottom_scale);
-linear_extrude(height = bust_height, scale=bust_scale) starburst(10, or_base, ir_base);
+pleats = 10;
+pleat_height = 5;
+tick = 180 / pleats;
+
+function starpoints(ir, z) = [
+  for (i = [0 : 2 * pleats - 1])
+    let (th = i * tick, r = ir + (i % 2 ? pleat_height : 0))
+      [r * cos(th), r * sin(th), z]
+];
+
+function starfaces(level) = [
+  for (i = [level * 2*pleats : (level+1) * 2*pleats - 2])
+    [i, i+1, (i+1) + 2*pleats, i + 2*pleats],
+  [(level+1) * 2*pleats - 1, level * 2*pleats,
+    (level+1) * 2*pleats, (level+2) * 2*pleats - 1]
+];
+
+polyhedron([for(rim=measurements)
+    each starpoints(rim[0], rim[1])],
+  [
+    [for (i = [0 : 2*pleats - 1])
+      i],
+    for(i=[0:len(measurements)-2])
+      each starfaces(i),
+    [for (i = [0 : 2*pleats - 1])
+      (len(measurements)-1)*2*pleats + i]
+  ]);
+echo(  [
+    [for (i = [0 : 2*pleats - 1])
+      i],
+    for(i=[0:len(measurements)-2])
+      each starfaces(i),
+    [for (i = [0 : 2*pleats - 1])
+      (len(measurements)-1)*2*pleats + i]
+  ]);
