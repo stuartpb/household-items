@@ -4,18 +4,18 @@ bottom_scale = 5;
 bust_scale = 4;
 
 measurements = [
-  [47.5, 0],
-  [28.5, 40],
-  [38, 60]
+  [47.5, 52.5, 0],
+  [28.5, 33.5, 40],
+  [38, 43, 60]
 ];
 
 pleats = 10;
 pleat_height = 5;
 tick = -180 / pleats;
 
-function starpoints(ir, z) = [
+function starpoints(ir, or, z) = [
   for (i = [0 : 2 * pleats - 1])
-    let (th = i * tick, r = ir + (i % 2 ? pleat_height : 0))
+    let (th = i * tick, r = (i % 2 ? or : ir))
       [r * cos(th), r * sin(th), z]
 ];
 
@@ -43,7 +43,7 @@ function starfaces(level) =
 ];
 
 polyhedron([for(rim=measurements)
-    each starpoints(rim[0], rim[1])],
+    each starpoints(rim[0], rim[1], rim[2])],
   [
     [each [2*pleats - 1:-1:0]],
     for(i=[0:len(measurements)-2])
