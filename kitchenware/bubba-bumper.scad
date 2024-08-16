@@ -14,6 +14,6 @@ module footprint() {
 
 $fn = 300;
 
-displace = 90;
+displace = 65;
 
-translate([-displace,0]) rotate_extrude(angle=30) translate([displace,5]) footprint();
+translate([-displace,0]) rotate_extrude(angle=36) translate([displace,5]) footprint();
