@@ -6,9 +6,9 @@ foot_length = 5;
 toe_diameter = 2;
 foot_width = 4;
 
-plate_length = 50;
-plate_width = 25;
-plate_thickness = 1.5;
+plate_length = 75;
+plate_width = 50;
+plate_thickness = 1.8;
 
 $fs = .25;
 
