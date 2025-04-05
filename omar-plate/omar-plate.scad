@@ -7,8 +7,8 @@ toe_diameter = 2;
 foot_width = 4;
 
 plate_length = 75;
-plate_width = 50;
-plate_thickness = 1.8;
+plate_width = 75;
+plate_thickness = 2;
 
 $fs = .25;
 
@@ -34,6 +34,9 @@ union() {
       rotate([0,0,180]) foot();
     translate([plate_width-corner_radius,dist+bar_distance])
       rotate([0,0,180]) foot();
+    translate([(plate_width+foot_width)/2,dist+bar_distance])
+      rotate([0,0,180]) foot();
+    translate([(plate_width-foot_width)/2,dist]) foot();
     translate([corner_radius,dist]) foot();
     translate([plate_width-foot_width-corner_radius,dist]) foot();
   }
