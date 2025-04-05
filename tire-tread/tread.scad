@@ -1,12 +1,12 @@
 width = 20;
-outer_height = 10;
+outer_height = 8;
 inner_height = 0;
 tread_height = 1;
 tread_depth = 0.8;
-length = 72;
+length = 68;
 
 module tread_rhomboid() {
-  polygon([[6,0],[0,0],[0,5],[5,10],[15,10]]);
+  polygon([[4,0],[0,0],[0,3],[5,9],[12,9]]);
 }
 module tread_chevron() {
   union() {
@@ -23,7 +23,7 @@ module tread_unit() {
 }
 
 module tread_neg() {
-  for (y = [0:24:length]) {
+  for (y = [0:22:length]) {
     translate([0,y,0]) tread_unit();
   }
 }
