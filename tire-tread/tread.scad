@@ -1,9 +1,9 @@
 width = 20;
-outer_height = 6.6;
+outer_height = 5;
 inner_height = 0;
 tread_height = 1;
 tread_depth = 0.8;
-length = 62;
+length = 20*10;
 
 module tread_rhomboid() {
   polygon([[4,0],[0,0],[0,3],[5,8],[12,8]]);
